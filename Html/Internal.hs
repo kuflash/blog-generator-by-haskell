@@ -6,9 +6,9 @@ newtype Structure = Structure String
 
 type Title = String
 
-append_ :: Structure -> Structure -> Structure
-append_ first second =
-  Structure (getStructureString first <> getStructureString second)
+instance Semigroup Structure where
+  (<>) a b =
+    Structure (getStructureString a <> getStructureString b)
 
 getStructureString :: Structure -> String
 getStructureString (Structure content) = content

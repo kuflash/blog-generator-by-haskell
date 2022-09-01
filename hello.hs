@@ -8,7 +8,7 @@ myhtml =
   html_
     "Page title"
     ( (<>)
-        (h1_ "I'm a heading")
+        (h_ 1 "I'm a heading")
         ( (<>)
             (p_ "I'm a paragraph one")
             (p_ "I'm a paragraph two")
